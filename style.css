@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #191b47;
+  color: aqua;
+}
+
+#fullbody {
+  margin: 1%;
+  padding: 1%;
+  background-color: #111334;
+  color: aqua;
+  border-radius: 30px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+}
+
+#others ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+
+#others ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: aqua;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+#others ul li a:hover {
+  /* color: white; */
+  text-decoration: underline;
+  /* color: purple; */
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  background-color: aqua;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  gap: 30px;
+}
+
+#main h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#main p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+#image{
+  cursor: pointer;
+}
+#image .portfolio-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.portfolio-image:hover {
+  transform: scale(1.05);
+}
+
+section#skills,
+section#projects,
+section#education,
+section#contact {
+  text-align: center;
+  margin: 40px 10px;
+}
+
+#skills,
+#projects,
+#education,
+#contact {
+  background-color: rgba(39, 67, 222, 0.499);
+  padding: 20px;
+  border-radius: 20px;
+    margin: 20px auto;
+}
+#skills h2,
+#projects h2,
+#education h2,
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#contact h2 {
+    margin-bottom: 20px;
+}
+#projects p{
+  text-align: center;
+}
+#skills ul,
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+#skills ul li,
+#projects ul li {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#projects ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: aqua;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+#others ul li a:hover {
+  color: white;
+}
+#skills ul li:hover,
+#projects ul li:hover,
+.mail:hover {
+  background-color: purple;
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#education p,
+#contact p {
+  font-size: 18px;
+  padding: 0 10%;
+}
+
+.mail {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aqua;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.container {
+    background-color: #e6f3ff;
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #66b3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3399ff;
+}
+
+/* ========== Media Queries for Responsiveness ========== */
+@media screen and (max-width: 768px) {
+  #main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #others ul {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #main h1 {
+    font-size: 32px;
+  }
+
+  #main p {
+    font-size: 16px;
+  }
+
+  #skills ul li,
+  #projects ul li {
+    font-size: 16px;
+  }
+
+  #education p,
+  #contact p {
+    font-size: 16px;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 100px;
+  }
+
+  #others ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #main h1 {
+    font-size: 28px;
+  }
+
+  #main p,
+  #education p,
+  #contact p {
+    font-size: 15px;
+  }
+
+  .portfolio-image {
+    width: 90%;
+  }
+}
